@@ -1,6 +1,6 @@
 <script lang="ts">
   import Icon from 'svelte-awesome'
-  import { weibo, qq, twitter, telegram, steam, github } from 'svelte-awesome/icons'
+  import { weibo, qq, twitter, telegram, steam, github, envelope } from 'svelte-awesome/icons'
   import { faTiktok as tiktok, faBilibili as bilibili } from '@fortawesome/free-brands-svg-icons';
 </script>
 
@@ -26,9 +26,9 @@
       <Icon data={twitter} class='inline-block' />
       @JiaHe888
     </a>
-    <a href='https://t.me/ABC86174356' target='_blank' rel='noopener noreferrer' class='link'>
+    <a href='https://t.me/jiahe_furry' target='_blank' rel='noopener noreferrer' class='link'>
       <Icon data={telegram} class='inline-block' />
-      @ABC86174356
+      @jiahe_furry
     </a>
     <a href='https://steamcommunity.com/id/jiahe005/' target='_blank' rel='noopener noreferrer' class='link'>
       <Icon data={steam} class='inline-block' />
@@ -37,6 +37,10 @@
     <a href='https://github.com/jiahe005' target='_blank' rel='noopener noreferrer' class='link'>
       <Icon data={github} class='inline-block' />
       @jiahe005
+    </a>
+    <a href='mailto:jiahe005@petalmail.com' target='_blank' rel='noopener noreferrer' class='link'>
+      <Icon data={envelope} class='inline-block' />
+      jiahe005@petalmail.com
     </a>
   </div>
   <div class='relative'>
