@@ -29,7 +29,7 @@
   export let backClass: string = ''
 </script>
 
-<div class={`rounded-lg border border-gray-200 shadow-md transition-all ${isFront ? frontClass : backClass}`}
+<div class={`rounded-lg border border-gray-200 dark:border-none shadow-md transition-all ${isFront ? frontClass : backClass}`}
      on:mouseenter={deviceType === DeviceType.Pointer ? handleJiaHeCardEnter : undefined}
      on:mouseleave={deviceType === DeviceType.Pointer ? handleJiaHeCardLeave : undefined}
      on:click={deviceType === DeviceType.Touch ? handleJiaHeCardClick : undefined}>

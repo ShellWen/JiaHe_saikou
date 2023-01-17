@@ -27,19 +27,19 @@
     }
   })
 </script>
-<main class='bg-default text-default min-w-[100vw] min-h-[100vh] flex flex-col items-center bgImg'>
+<main class='bg-default dark:bg-dark text-default min-w-[100vw] min-h-[100vh] flex flex-col items-center bgImg'>
   <div
     class='w-full max-w-sm flex-1 flex flex-col justify-between z-10'>
     <div class='flex-1 flex flex-col'>
-      <header class='flex flex-col pl-4'>
+      <header class='dark:text-white flex flex-col pl-4'>
         <HeadClock class='pt-8' date={currentTime} />
         <HeadWeek date={currentTime} />
         <span class='font-dot text-2xl'>
           嘉何的电子名片
         </span>
       </header>
-      <section class='mt-4 bg-default'>
-        <JiaHeCard backClass='h-[400px] bg-default' frontClass='h-[200px] bg-default'>
+      <section class='dark:text-dark rounded-lg mt-4 bg-default dark:bg-darkPrimary'>
+        <JiaHeCard backClass='h-[400px] bg-default dark:bg-darkPrimary' frontClass='h-[200px] bg-default dark:bg-darkPrimary'>
           <CardFront slot='front' />
           <CardBack slot='back' />
         </JiaHeCard>

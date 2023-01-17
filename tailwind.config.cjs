@@ -9,10 +9,13 @@ module.exports = {
         dot: ['"Dotted Songti Diamond"', ...defaultTheme.fontFamily.sans],
       },
       backgroundColor: {
-        default: '#eee'
+        default: '#eeeeee',
+        dark: '#1f1f1f',
+        darkPrimary: '#232323'
       },
       textColor: {
-        default: '#666'
+        default: '#666666',
+        dark: '#f8f8ff'
       }
     },
   },

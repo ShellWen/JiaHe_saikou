@@ -45,6 +45,7 @@
     <a href='https://blog.gfmc.top/' target='_blank' rel='noopener noreferrer' class='link'>
       <Icon data={share} class='inline-block' />
       感谢ShellWen对本页面的贡献
+    </a>
   </div>
   <div class='relative'>
     <img alt='' class='absolute bottom-0 right-0 translate-y-[45px] translate-x-[15px] w-32'
