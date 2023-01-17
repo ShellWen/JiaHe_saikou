@@ -29,17 +29,17 @@
   export let backClass: string = ''
 </script>
 
-<div class={`rounded-lg border border-gray-200 shadow-md transition-all ${isFront ? frontClass : backClass}`}
+<div class={`rounded-lg border border-gray-200 shadow-md transition-all duration-500 ${isFront ? frontClass : backClass}`}
      on:mouseenter={deviceType === DeviceType.Pointer ? handleJiaHeCardEnter : undefined}
      on:mouseleave={deviceType === DeviceType.Pointer ? handleJiaHeCardLeave : undefined}
      on:click={deviceType === DeviceType.Touch ? handleJiaHeCardClick : undefined}>
-  <div class={`rounded-lg relative transition-all card h-full w-full ${isFront ? '' : 'card-back'}`}>
-    <div class='rounded-lg absolute flex h-full w-full front'>
+  <div class={`rounded-lg relative transition-all duration-500 card h-full w-full ${isFront ? '' : 'card-back'}`}>
+    <div class='rounded-lg absolute h-full w-full front'>
       <slot name='front'>
         Card front not provided
       </slot>
     </div>
-    <div class='rounded-lg absolute flex h-full w-full back'>
+    <div class='rounded-lg absolute h-full w-full back'>
       <slot name='back'>
         Card back not provided
       </slot>

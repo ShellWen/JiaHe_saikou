@@ -4,7 +4,7 @@
   import { faTiktok as tiktok, faBilibili as bilibili } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<div class='flex-1 flex flex-col justify-between p-4'>
+<div class='w-full h-[400px] flex-1 flex flex-col justify-between p-4'>
   <div class='flex flex-col'>
     <a href='https://v.douyin.com/Lox8duD/' target='_blank' rel='noopener noreferrer' class='link'>
       <Icon data={tiktok} class='inline-block' />
