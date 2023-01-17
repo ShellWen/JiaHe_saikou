@@ -3,7 +3,7 @@
     <span class='text-4xl font-bold'>嘉何</span>
     {'17 岁，'}
     <br>
-    {'是高三打工仔。'}
+    {'在读高三。'}
     <br>
     {'广州出没，'}
     <br>
