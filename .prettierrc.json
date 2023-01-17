@@ -2,5 +2,16 @@
   "tabWidth": 2,
   "useTabs": false,
   "semi": false,
-  "singleQuote": true
+  "singleQuote": true,
+  "printWidth": 160,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ],
+  "plugins": [],
+  "pluginSearchDirs": []
 }

@@ -1,6 +1,6 @@
 <script lang='ts'>
   import Icon from 'svelte-awesome'
-  import { envelope, github, qq, steam, telegram, twitter, weibo, share } from 'svelte-awesome/icons'
+  import { envelope, github, qq, share, steam, telegram, twitter, weibo } from 'svelte-awesome/icons'
   import { faBilibili as bilibili, faTiktok as tiktok } from '@fortawesome/free-brands-svg-icons'
 
   interface Social {
@@ -19,7 +19,7 @@
     { text: 'jiahe005', icon: steam, link: 'https://steamcommunity.com/id/jiahe005/' },
     { text: '@jiahe005', icon: github, link: 'https://github.com/jiahe005' },
     { text: 'jiahe005@petalmail.com', icon: envelope, link: 'mailto:jiahe005@petalmail.com' },
-    { text: '感谢 ShellWen 对本页面的贡献', icon: share, link: 'https://blog.gfmc.top/' },
+    { text: '感谢 ShellWen 对本页面的贡献', icon: share, link: 'https://blog.gfmc.top/' }
   ]
 </script>
 

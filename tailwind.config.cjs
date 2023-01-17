@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        dot: ['"Dotted Songti Diamond"', ...defaultTheme.fontFamily.sans],
+        dot: ['"Dotted Songti Diamond"', ...defaultTheme.fontFamily.sans]
       },
       backgroundColor: {
         default: '#eee'
@@ -14,7 +14,7 @@ module.exports = {
       textColor: {
         default: '#666'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }

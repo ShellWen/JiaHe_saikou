@@ -4,23 +4,24 @@
  */
 
 interface CoordinateType {
-  x: number;
-  y: number;
+  x: number
+  y: number
 }
 
 interface AreaType {
-  width: number;
-  height: number;
+  width: number
+  height: number
 }
 
 class Circle {
-  private readonly origin: CoordinateType;
-  readonly position: CoordinateType;
-  private readonly color: string;
-  private readonly speed: number;
-  private readonly angle: number;
-  private context: CanvasRenderingContext2D;
-  private renderCount: number;
+  readonly position: CoordinateType
+  private readonly origin: CoordinateType
+  private readonly color: string
+  private readonly speed: number
+  private readonly angle: number
+  private context: CanvasRenderingContext2D
+  private renderCount: number
+
   constructor({ origin, speed, color, angle, context }) {
     this.origin = origin
     this.position = { ...this.origin }
@@ -40,21 +41,18 @@ class Circle {
 
   move() {
     this.position.x = Math.sin(this.angle) * this.speed + this.position.x
-    this.position.y =
-      Math.cos(this.angle) * this.speed +
-      this.position.y +
-      this.renderCount * 0.3
+    this.position.y = Math.cos(this.angle) * this.speed + this.position.y + this.renderCount * 0.3
     this.renderCount++
   }
 }
 
 class Boom {
-  private readonly origin: CoordinateType;
-  private readonly context: CanvasRenderingContext2D;
-  private readonly circleCount: number;
-  private area: AreaType;
-  stop: boolean;
-  private readonly circles: Circle[];
+  stop: boolean
+  private readonly origin: CoordinateType
+  private readonly context: CanvasRenderingContext2D
+  private readonly circleCount: number
+  private area: AreaType
+  private readonly circles: Circle[]
 
   constructor({ origin, context, circleCount = 10, area }) {
     this.origin = origin
@@ -103,10 +101,7 @@ class Boom {
 
   move() {
     this.circles.forEach((circle, index) => {
-      if (
-        circle.position.x > this.area.width ||
-        circle.position.y > this.area.height
-      ) {
+      if (circle.position.x > this.area.width || circle.position.y > this.area.height) {
         return this.circles.splice(index, 1)
       }
       circle.move()
@@ -123,18 +118,19 @@ class Boom {
 
 // TODO: 调整页面大小后自动调整 canvas 大小
 class CursorSpecialEffects {
-  private readonly computerCanvas: HTMLCanvasElement;
-  private readonly renderCanvas: HTMLCanvasElement;
+  private readonly computerCanvas: HTMLCanvasElement
+  private readonly renderCanvas: HTMLCanvasElement
 
-  private readonly computerContext: CanvasRenderingContext2D;
-  private readonly renderContext: CanvasRenderingContext2D;
+  private readonly computerContext: CanvasRenderingContext2D
+  private readonly renderContext: CanvasRenderingContext2D
 
-  private readonly globalWidth: number;
-  private readonly globalHeight: number;
+  private readonly globalWidth: number
+  private readonly globalHeight: number
 
-  private booms: Boom[];
+  private booms: Boom[]
 
-  private running: boolean;
+  private running: boolean
+
   constructor() {
     this.computerCanvas = document.createElement('canvas')
     this.renderCanvas = document.createElement('canvas')
@@ -175,14 +171,8 @@ class CursorSpecialEffects {
     style.zIndex = '999999999999999999999999999999999999999999'
     style.pointerEvents = 'none'
 
-    style.width =
-      String(this.renderCanvas.width =
-        this.computerCanvas.width =
-          this.globalWidth)
-    style.height =
-      String(this.renderCanvas.height =
-        this.computerCanvas.height =
-          this.globalHeight)
+    style.width = String((this.renderCanvas.width = this.computerCanvas.width = this.globalWidth))
+    style.height = String((this.renderCanvas.height = this.computerCanvas.height = this.globalHeight))
 
     document.body.append(this.renderCanvas)
 
@@ -220,13 +210,7 @@ class CursorSpecialEffects {
       boom.move()
       boom.draw()
     })
-    this.renderContext.drawImage(
-      this.computerCanvas,
-      0,
-      0,
-      this.globalWidth,
-      this.globalHeight
-    )
+    this.renderContext.drawImage(this.computerCanvas, 0, 0, this.globalWidth, this.globalHeight)
   }
 }
 

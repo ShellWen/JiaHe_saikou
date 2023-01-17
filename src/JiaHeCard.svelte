@@ -29,10 +29,11 @@
   export let backClass: string = ''
 </script>
 
-<div class={`rounded-lg border border-gray-200 shadow-md transition-all duration-500 ${isFront ? frontClass : backClass}`}
-     on:mouseenter={deviceType === DeviceType.Pointer ? handleJiaHeCardEnter : undefined}
-     on:mouseleave={deviceType === DeviceType.Pointer ? handleJiaHeCardLeave : undefined}
-     on:click={deviceType === DeviceType.Touch ? handleJiaHeCardClick : undefined}>
+<div
+  class={`rounded-lg border border-gray-200 shadow-md transition-all duration-500 ${isFront ? frontClass : backClass}`}
+  on:click={deviceType === DeviceType.Touch ? handleJiaHeCardClick : undefined}
+  on:mouseenter={deviceType === DeviceType.Pointer ? handleJiaHeCardEnter : undefined}
+  on:mouseleave={deviceType === DeviceType.Pointer ? handleJiaHeCardLeave : undefined}>
   <div class={`rounded-lg relative transition-all duration-500 card h-full w-full ${isFront ? '' : 'card-back'}`}>
     <div class='rounded-lg absolute h-full w-full front'>
       <slot name='front'>
@@ -51,16 +52,20 @@
   .card {
     transform-style: preserve-3d;
   }
+
   .card-back {
     transform: rotateX(180deg);
   }
+
   .front,
   .back {
     backface-visibility: hidden;
   }
+
   .front {
     transform: rotateX(0deg);
   }
+
   .back {
     transform: rotateX(180deg);
   }
