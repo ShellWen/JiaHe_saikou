@@ -17,6 +17,14 @@
     }
   })
 
+  onMount(() => {
+    console.log(`\n%c ⚡JiaHe %c https://jiahe005.github.io %c BY%c ShellWen  \n\n`,
+      'color: #ffffff; background: rgb(0, 145, 228); padding:5px 0;',
+      'background:rgba(197, 197, 197, 0.89); padding:5px 0;',
+      'color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;',
+      'color: rgb(0, 145, 228); background: rgba(49, 49, 49, 0.85); padding:5px 0;')
+  })
+
   let currentTime = new Date()
 
   onMount(() => {
@@ -40,7 +48,8 @@
 
   })
 </script>
-<main class='bg-default text-default dark:bg-default-dark dark:text-default-dark min-w-[100vw] min-h-[100vh] flex flex-col items-center bgImg'>
+<main
+  class='bg-default text-default dark:bg-default-dark dark:text-default-dark min-w-[100vw] min-h-[100vh] flex flex-col items-center bgImg'>
   <div
     class='w-full max-w-sm flex-1 flex flex-col justify-between z-10'>
     <div class='flex-1 flex flex-col'>
@@ -52,7 +61,8 @@
         </span>
       </header>
       <section class='mt-4 bg-default dark:bg-default-dark'>
-        <JiaHeCard backClass='h-[400px] bg-default dark:bg-default-dark' frontClass='h-[200px] bg-default dark:bg-default-dark'>
+        <JiaHeCard backClass='h-[400px] bg-default dark:bg-default-dark'
+                   frontClass='h-[200px] bg-default dark:bg-default-dark'>
           <CardFront slot='front' />
           <CardBack slot='back' />
         </JiaHeCard>
