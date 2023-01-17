@@ -7,6 +7,15 @@
   import CardFront from './CardFront.svelte'
   import CardBack from './CardBack.svelte'
   import Footer from './Footer.svelte'
+  import { currentDarkMode } from './stores'
+
+  $: currentDarkMode.subscribe((value) => {
+    if (value == 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  })
 
   let currentTime = new Date()
 
@@ -26,8 +35,12 @@
       clearInterval(interval)
     }
   })
+
+  onMount(() => {
+
+  })
 </script>
-<main class='bg-default text-default min-w-[100vw] min-h-[100vh] flex flex-col items-center bgImg'>
+<main class='bg-default text-default dark:bg-default-dark dark:text-default-dark min-w-[100vw] min-h-[100vh] flex flex-col items-center bgImg'>
   <div
     class='w-full max-w-sm flex-1 flex flex-col justify-between z-10'>
     <div class='flex-1 flex flex-col'>
@@ -38,8 +51,8 @@
           嘉何的电子名片
         </span>
       </header>
-      <section class='mt-4 bg-default'>
-        <JiaHeCard backClass='h-[400px] bg-default' frontClass='h-[200px] bg-default'>
+      <section class='mt-4 bg-default dark:bg-default-dark'>
+        <JiaHeCard backClass='h-[400px] bg-default dark:bg-default-dark' frontClass='h-[200px] bg-default dark:bg-default-dark'>
           <CardFront slot='front' />
           <CardBack slot='back' />
         </JiaHeCard>

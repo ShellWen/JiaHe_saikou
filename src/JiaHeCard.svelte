@@ -30,7 +30,7 @@
 </script>
 
 <div
-  class={`rounded-lg border border-gray-200 shadow-md transition-all duration-500 ${isFront ? frontClass : backClass}`}
+  class={`rounded-lg border border-gray-200 dark:border-gray-800 shadow-md transition-all duration-500 ${isFront ? frontClass : backClass}`}
   on:click={deviceType === DeviceType.Touch ? handleJiaHeCardClick : undefined}
   on:mouseenter={deviceType === DeviceType.Pointer ? handleJiaHeCardEnter : undefined}
   on:mouseleave={deviceType === DeviceType.Pointer ? handleJiaHeCardLeave : undefined}>
