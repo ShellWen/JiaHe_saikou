@@ -1,6 +1,6 @@
 <script lang="ts">
   import Icon from 'svelte-awesome'
-  import { weibo, qq, twitter, telegram, steam, github, envelope } from 'svelte-awesome/icons'
+  import { weibo, qq, twitter, telegram, steam, github, envelope ,share} from 'svelte-awesome/icons'
   import { faTiktok as tiktok, faBilibili as bilibili } from '@fortawesome/free-brands-svg-icons';
 </script>
 
@@ -32,16 +32,19 @@
     </a>
     <a href='https://steamcommunity.com/id/jiahe005/' target='_blank' rel='noopener noreferrer' class='link'>
       <Icon data={steam} class='inline-block' />
-      jiahe005
+      嘉何
     </a>
     <a href='https://github.com/jiahe005' target='_blank' rel='noopener noreferrer' class='link'>
       <Icon data={github} class='inline-block' />
       @jiahe005
     </a>
-    <a href='mailto:jiahe005@petalmail.com' target='_blank' rel='noopener noreferrer' class='link'>
+    <a href='mailto:jiahe.GX@outlook.com' target='_blank' rel='noopener noreferrer' class='link'>
       <Icon data={envelope} class='inline-block' />
-      jiahe005@petalmail.com
+      jiahe.GX@outlook.com
     </a>
+    <a href='https://blog.gfmc.top/' target='_blank' rel='noopener noreferrer' class='link'>
+      <Icon data={share} class='inline-block' />
+      感谢ShellWen对本页面的贡献
   </div>
   <div class='relative'>
     <img alt='' class='absolute bottom-0 right-0 translate-y-[45px] translate-x-[15px] w-32'
