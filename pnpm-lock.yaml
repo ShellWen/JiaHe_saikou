@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@fortawesome/free-brands-svg-icons': ^6.2.1
@@ -11,7 +11,7 @@ specifiers:
   svelte: ^3.55.0
   svelte-awesome: ^3.0.1
   svelte-check: ^2.10.3
-  svelte-local-storage-store: ^0.3.2
+  svelte-local-storage-store: ^0.4.0
   svelte-media-queries: ^1.5.2
   tailwindcss: ^3.2.4
   tslib: ^2.4.1
@@ -22,7 +22,7 @@ dependencies:
   '@fortawesome/free-brands-svg-icons': 6.2.1
   '@fortawesome/free-regular-svg-icons': 6.2.1
   svelte-awesome: 3.0.1_svelte@3.55.1
-  svelte-local-storage-store: 0.3.2_svelte@3.55.1
+  svelte-local-storage-store: 0.4.0_svelte@3.55.1
   svelte-media-queries: 1.5.2
 
 devDependencies:
@@ -32,8 +32,8 @@ devDependencies:
   postcss: 8.4.21
   prettier: 2.8.3
   svelte: 3.55.1
-  svelte-check: 2.10.3_postcss@8.4.21+svelte@3.55.1
-  tailwindcss: 3.2.4
+  svelte-check: 2.10.3_pehl75e5jsy22vp33udjja4soi
+  tailwindcss: 3.2.4_postcss@8.4.21
   tslib: 2.4.1
   typescript: 4.9.4
   vite: 4.0.4
@@ -1000,7 +1000,7 @@ packages:
       svelte: 3.55.1
     dev: false
 
-  /svelte-check/2.10.3_postcss@8.4.21+svelte@3.55.1:
+  /svelte-check/2.10.3_pehl75e5jsy22vp33udjja4soi:
     resolution: {integrity: sha512-Nt1aWHTOKFReBpmJ1vPug0aGysqPwJh2seM1OvICfM2oeyaA62mOiy5EvkXhltGfhCcIQcq2LoE0l1CwcWPjlw==}
     hasBin: true
     peerDependencies:
@@ -1013,7 +1013,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 3.55.1
-      svelte-preprocess: 4.10.7_720a9953ae0478bce00e7bc3a3de2065
+      svelte-preprocess: 4.10.7_oifjsu5oar4lzyaoppb2hxramu
       typescript: 4.9.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -1037,8 +1037,8 @@ packages:
       svelte: 3.55.1
     dev: true
 
-  /svelte-local-storage-store/0.3.2_svelte@3.55.1:
-    resolution: {integrity: sha512-wIjXgulHNYecHAWv68ZpQOaxjFJS/LaGAo8yKLal/mMrWTkbpGQMo2f2hF5X9WJGNqsOp5pJAjsmnuNoottctQ==}
+  /svelte-local-storage-store/0.4.0_svelte@3.55.1:
+    resolution: {integrity: sha512-ctPykTt4S3BE5bF0mfV0jKiUR1qlmqLvnAkQvYHLeb9wRyO1MdIFDVI23X+TZEFleATHkTaOpYZswIvf3b2tWA==}
     engines: {node: '>=0.14'}
     peerDependencies:
       svelte: ^3.48.0
@@ -1050,7 +1050,7 @@ packages:
     resolution: {integrity: sha512-/E3NSpxVF+ObjhpkU3wv5xhRaA/Irqic0eN/LqBNPANIic8uWu9pjVMgjMZRXpsU3SMdbK0e6c62Z78bT7TL7w==}
     dev: false
 
-  /svelte-preprocess/4.10.7_720a9953ae0478bce00e7bc3a3de2065:
+  /svelte-preprocess/4.10.7_oifjsu5oar4lzyaoppb2hxramu:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -1105,12 +1105,13 @@ packages:
   /svelte/3.55.1:
     resolution: {integrity: sha512-S+87/P0Ve67HxKkEV23iCdAh/SX1xiSfjF1HOglno/YTbSTW7RniICMCofWGdJJbdjw3S+0PfFb1JtGfTXE0oQ==}
     engines: {node: '>= 8'}
-    dev: true
 
-  /tailwindcss/3.2.4:
+  /tailwindcss/3.2.4_postcss@8.4.21:
     resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3

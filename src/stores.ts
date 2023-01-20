@@ -1,4 +1,4 @@
-import { writable as localWritable } from 'svelte-local-storage-store'
+import { persisted } from 'svelte-local-storage-store'
 import { createMediaStore } from 'svelte-media-queries'
 import type { Readable } from 'svelte/store'
 import { derived } from 'svelte/store'
@@ -7,7 +7,7 @@ type LocalDarkModeState = 'light' | 'dark' | 'system'
 type SystemDarkModeState = 'light' | 'dark' | 'unknown'
 type CurrentDarkModeState = 'light' | 'dark'
 
-export const localDarkMode = localWritable<LocalDarkModeState>('darkMode', 'system')
+export const localDarkMode = persisted<LocalDarkModeState>('darkMode', 'system')
 const darkMedia = createMediaStore('(prefers-color-scheme: dark)')
 const lightMedia = createMediaStore('(prefers-color-scheme: light)')
 export const systemDarkMode: Readable<SystemDarkModeState> = derived([darkMedia, lightMedia], ([dark, light]) => {
