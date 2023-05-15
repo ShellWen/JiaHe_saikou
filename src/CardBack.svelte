@@ -10,14 +10,12 @@
   }
 
   const socials: Social[] = [
+    { text: 'QQ：2093702861', icon: qq, link: 'https://qm.qq.com/cgi-bin/qm/qr?k=E359EoW9MSoSOuFMmSteLUjlqFQZFxgs' },
     { text: 'JiaHe005', icon: tiktok, link: 'https://v.douyin.com/Lox8duD/' },
-    { text: '大号2093702861', icon: qq, link: 'https://qm.qq.com/cgi-bin/qm/qr?k=E359EoW9MSoSOuFMmSteLUjlqFQZFxgs' },
-    { text: '小号2093702821', icon: qq, link: 'https://qm.qq.com/cgi-bin/qm/qr?k=E359EoW9MSoSOuFMmSteLUjlqFQZFxgs' },
     { text: '嘉禾望岗232633099', icon: qq, link: 'https://jq.qq.com/?_wv=1027&k=CIMP9kPN' },
-    { text: '嘉何今天没睡醒', icon: weibo, link: 'https://weibo.com/u/6482679368' },
-    { text: '嘉何今天没睡醒', icon: bilibili, link: 'https://space.bilibili.com/321199489' },
-    { text: '@JiaHe888', icon: twitter, link: 'https://twitter.com/JiaHe888' },
-    { text: '复活号@JiaHe114514', icon: twitter, link: 'https://twitter.com/JiaHe114514' },
+    { text: '嘉何的微博', icon: weibo, link: 'https://weibo.com/u/6482679368' },
+    { text: '嘉何的B站', icon: bilibili, link: 'https://space.bilibili.com/321199489' },
+    { text: '推特@JiaHe888', icon: twitter, link: 'https://twitter.com/JiaHe888' },
     { text: '@jiahe_furry', icon: telegram, link: 'https://t.me/jiahe_furry' },
     { text: 'jiahe005', icon: steam, link: 'https://steamcommunity.com/id/jiahe005/' },
     { text: '@jiahe005', icon: github, link: 'https://github.com/jiahe005' },
