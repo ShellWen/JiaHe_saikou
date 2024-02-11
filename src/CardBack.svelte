@@ -20,7 +20,7 @@
     { text: 'jiahe005', icon: steam, link: 'https://steamcommunity.com/id/jiahe005/' },
     { text: '@jiahe005', icon: github, link: 'https://github.com/jiahe005' },
     { text: 'jiahe.gx@outlook.com', icon: envelope, link: 'mailto:jiahe.gx@outlook.com' },
-    { text: '感谢 ShellWen 对本页面的贡献', icon: share, link: 'https://blog.gfmc.top/' },
+    { text: '感谢 ShellWen 对本页面的贡献', icon: share, link: 'https://shellwen.com/' },
   ]
 </script>
 
